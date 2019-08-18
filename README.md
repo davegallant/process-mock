@@ -1,18 +1,16 @@
 # eset-nod32-mock
 
-A Golang project the ESET NOD32 antivirus..
+This project mocks the ESET NOD32 antivirus. In Linux, this process often resides in `/opt/eset/esets/sbin/esets_daemon`
 
-## Getting started
+## Building the binary
 
-This project requires Go to be installed. On OS X with Homebrew you can just run `brew install go`.
+This project requires Go to be installed.
 
 Running it then should be as simple as:
 
-```console
-$ make
-$ ./bin/esets_daemon
+```bash
+# build
+make
+# run
+./bin/esets_daemon
 ```
-
-### Testing
-
-``make test``

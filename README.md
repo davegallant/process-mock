@@ -6,9 +6,7 @@ In Linux, this process often is installed in `/opt/eset/esets/sbin/esets_daemon`
 
 ## Building the binary
 
-This project requires Go to be installed.
-
-Running it then should be as simple as:
+Requires `gcc` installed.
 
 ```bash
 # build

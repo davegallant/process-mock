@@ -42,3 +42,4 @@ EOF
 chmod 664 $PACKAGE_PATH/etc/systemd/system/eset-nod32-mock.service
 
 dpkg-deb --build $PACKAGE_PATH
+

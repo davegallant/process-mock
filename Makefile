@@ -17,6 +17,7 @@ help:
 
 build:
 	@echo "building ${BIN_NAME}"
+	mkdir -p ./bin
 	gcc -o ./bin/${BIN_NAME} main.c
 
 clean:

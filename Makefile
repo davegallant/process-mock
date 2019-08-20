@@ -1,12 +1,9 @@
-.PHONY: build build-alpine clean test help default
 
 BIN_NAME=esets_daemon
 
-GIT_COMMIT=$(shell git rev-parse HEAD)
-GIT_DIRTY=$(shell test -n "`git status --porcelain`" && echo "+CHANGES" || true)
-
 default: build
 
+.PHONY: help
 help:
 	@echo 'Management commands for eset-mock:'
 	@echo
@@ -15,10 +12,12 @@ help:
 	@echo '    make clean           Clean the directory tree.'
 	@echo
 
+.PHONY: build
 build:
 	@echo "building ${BIN_NAME}"
 	mkdir -p ./bin
 	gcc -o ./bin/${BIN_NAME} main.c
 
+.PHONY: clean
 clean:
 	@test ! -e bin/${BIN_NAME} || rm bin/${BIN_NAME}

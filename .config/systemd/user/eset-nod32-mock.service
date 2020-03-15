@@ -1,0 +1,8 @@
+[Unit]
+Description=esets_daemon mock
+
+[Service]
+ExecStart=%h/.local/bin/esets_daemon
+
+[Install]
+WantedBy=multi-user.target

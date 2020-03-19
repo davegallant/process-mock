@@ -31,7 +31,7 @@ install: build
 	mkdir -p $(HOME)/.config/systemd/user
 	mkdir -p $(HOME)/.local/bin
 	cp ./.config/systemd/user/eset-nod32-mock.service $(HOME)/.config/systemd/user
-	cp ./$(DIST)/$(BIN_NAME) $(HOME)/.local/bin/
+	install ./$(DIST)/$(BIN_NAME) $(HOME)/.local/bin/
 	systemctl --user daemon-reload
 	systemctl enable --user eset-nod32-mock.service
 	systemctl start --user eset-nod32-mock.service

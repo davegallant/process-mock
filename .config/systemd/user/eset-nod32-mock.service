@@ -5,4 +5,4 @@ Description=esets_daemon mock
 ExecStart=%h/.local/bin/esets_daemon
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target

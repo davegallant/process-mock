@@ -1,4 +1,4 @@
-# eset-nod32-mock
+# process-mock
 
 This project mocks the ESET NOD32 antivirus. 
 
